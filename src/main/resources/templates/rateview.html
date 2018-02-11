@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1"></meta>
+<title>Spring cloud config client</title>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css"></link>
+<script src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
+</head>
+<body>
+	<div class="box">
+		<div class="title">Rate</div>
+		<div class="field is-horizontal">
+			<div class="field-label is-small">
+				<label class="label">Rate</label>
+			</div>
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<input class="input is-small" type="text" th:value="${rateAmount}"
+							placeholder="Small sized input"></input>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="field is-horizontal">
+			<div class="field-label is-small">
+				<label class="label">Lanes</label>
+			</div>
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<input class="input is-small" type="text" th:value="${lanes}"
+							placeholder="Small sized input"></input>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="field is-horizontal">
+			<div class="field-label is-small">
+				<label class="label">Toll Start</label>
+			</div>
+			<div class="field-body">
+				<div class="field">
+					<div class="control">
+						<input class="input is-small" type="text" th:value="${tollStart}"
+							placeholder="Small sized input"></input>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
